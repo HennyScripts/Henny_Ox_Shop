@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henny's Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="shop-container">
+        <div id="categories" class="panel">
+            <div class="shop-header drag-handle">
+                <i class="fa-solid fa-store"></i>
+                <h2>Categories</h2>
+            </div>
+            <div id="category-list">
+            </div>
+        </div>
+
+        <div id="items-panel" class="panel">
+             <div class="shop-header drag-handle">
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Items</h2>
+            </div>
+            <div id="items-grid">
+
+            </div>
+        </div>
+
+
+        <div id="cart" class="panel">
+            <div class="shop-header drag-handle">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <h2>Your Cart</h2>
+            </div>
+            <div id="cart-items">
+                <div class="empty-cart-message">Your cart is empty.</div>
+            </div>
+            <div id="cart-footer">
+                <div id="cart-total">
+                    <span>Total</span>
+                    <span id="total-price">$0</span>
+                </div>
+                 <button id="empty-cart-btn"><i class="fa-solid fa-trash-can"></i> Empty Cart</button>
+                <div id="payment-buttons">
+                    <button id="pay-cash" class="btn-gradient"><i class="fas fa-money-bill-wave"></i> Pay Cash</button>
+                    <button id="pay-card" class="btn-gradient"><i class="fas fa-credit-card"></i> Pay with Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
